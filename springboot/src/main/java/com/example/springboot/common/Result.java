@@ -35,20 +35,20 @@ public class Result {
      */
     private Object date;
     public static Result success(){
-        return new Result(CODE_SUCCESS, msg,"请求成功", date:null);
+        return new Result(CODE_SUCCESS, msg,"请求成功", date,null);
     }
     public static Result success(Object date){
         return new Result(CODE_SUCCESS, msg,"请求成功", date);
     }
     public static Result error(String msg){
-        return new Result(CODE_SUCCESS, msg, date:null);
+        return new Result(CODE_SUCCESS, msg, date,null);
     }
     public static Result error(String code,String msg){
-        return new Result(CODE_SYS_ERROR, msg, date:null);
+        return new Result(CODE_SYS_ERROR, msg, date,null);
     }
     public static Result error(){
-        return new Result(CODE_SYS_ERROR, mag: "系统错误", date:null);
+        return new Result(CODE_SYS_ERROR, mag, "系统错误", date, null);
     }
-    git add
-            
+
+
 }

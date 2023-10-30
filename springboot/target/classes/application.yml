@@ -1,6 +1,14 @@
+server:
+  port:9090
+
+#?????
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/honey2024?useSSL=false&useUnicode=true&characterEncoding=UTF-8&serverTimezone=GHT%2b8
-    username:
-    password:
+    username:root
+    password:12345678
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
